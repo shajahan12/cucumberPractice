@@ -2,6 +2,7 @@ package stepdefination;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class stepDefinitionWebpage {
 	
@@ -11,6 +12,10 @@ public class stepDefinitionWebpage {
 	      System.out.println("User on welcome page: " + webpage);
 	   }
 	
+	@When("^webpage testing jenkins$")
+	   public void user_on_testing_page(String webpage) {
+	      System.out.println("User on welcome page: " + webpage);
+	   }
 	@Then("^display (.*) webpage names$")
 	   public void verify_user_on_welcome_page(String name) {
 	  
